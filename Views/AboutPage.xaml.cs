@@ -1,4 +1,4 @@
-namespace CaicedoRamos_AppApuntes;
+namespace CaicedoRamos_AppApuntes.Views;
 
 public partial class AboutPage : ContentPage
 {
