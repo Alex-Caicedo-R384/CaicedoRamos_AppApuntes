@@ -2,7 +2,9 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CaicedoRamos_AppApuntes.Views.AllNotes"
-             Title="Tus Notas">
+             Title="Tus Notas"
+             BackgroundColor="#5e5e5e">
+
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Agregar" Clicked="Add_Clicked" IconImageSource="{FontImage Glyph='+', Color=White, Size=22}" />
     </ContentPage.ToolbarItems>
@@ -22,8 +24,8 @@
         <!-- Define the appearance of each item in the list -->
         <CollectionView.ItemTemplate>
             <DataTemplate>
-                <StackLayout>
-                    <Label Text="{Binding Text}" FontSize="22"/>
+                <StackLayout BackgroundColor="#5e5e5e">
+                    <Label Text="{Binding Text}" FontSize="22" TextColor="White"/>
                     <Label Text="{Binding Date}" FontSize="14" TextColor="Silver"/>
                 </StackLayout>
             </DataTemplate>
